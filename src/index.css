@@ -1,0 +1,94 @@
+body{
+  margin: 0px;
+  background-color: #000;
+  color: white;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.header{
+  background-color: #1d1d1f;
+  height: 85px;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.logo-img{
+  width:50px;
+  height:50px;
+  padding:10px;
+  padding-top:15px;
+  padding-left:40px;
+}
+
+.logo-text{
+  padding-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact-me{
+  float:right; 
+  height: 20px;
+  width: 140px;
+  padding:15px;
+  text-align: center; 
+  margin:15px;
+  margin-right:50px;
+  background-color:#0055ff;
+  border:1px solid #0049f3;
+  border-radius:5px;
+}
+
+.contact-me a{
+  color:white;
+  line-height: 1.1;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.banner{
+  padding-top: 150px;
+  font-size: 25px;
+  margin-left: 50px;
+  display: grid;
+ align-items: center; 
+ grid-template-columns: 5fr 5fr;
+}
+.banner p{
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.762);
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.banner img{
+  padding-left: 100px;
+  height: 550px;
+  width: 550px;
+  animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+::selection {
+  background-color: #0049f3;
+  color: white;
+}
